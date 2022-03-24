@@ -1,5 +1,32 @@
+:root {
+  font-size: 62.5%;
+}
 
-#background-image {
-  background: url('../images/quizz-background.jpg') no-repeat center center fixed;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #F8F9F8;
+
+}
+
+body {
+  background: url('../images/quizz-background2.jpg') no-repeat center center;
   background-size: cover;
-} 
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+
+#main-container {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*max-width: 80rem;*/
+  margin: 0 auto;
+}
+
