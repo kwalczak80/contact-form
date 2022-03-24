@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #F8F9F8;
+  color: #fafafa8f;
 
 }
 
@@ -18,17 +18,18 @@ body {
 
 h1 {
   font-size: 5rem;
+  color: #e11b1b;
 }
 
 h3 {
   font-size: 3rem;
   margin-top: 1.5rem;
+  color: #e11b1b;
 }
 
 #main-container {
   /*width: 100vh;
   height: 100vh;*/
-  background-color: blue;
   margin-top: 200px;
   display: flex;
   justify-content: center;
@@ -37,9 +38,11 @@ h3 {
 }
 
 #home {
-  border: 2px solid #fff;
+  border: 2px solid rgba(6, 213, 255, 1);
   padding: 20px 40px;
-}
+  background-color: rgba(21, 21, 138, 0.2);
+  border-radius: 10px;
+  }
 
 .flex-column {
   display: flex;
@@ -71,7 +74,7 @@ h3 {
 
 #submit-button {
   margin-top: 30px;
-  background-color: rgb(132, 211, 211);
+  background-color: #e11b1b;
   padding: 1rem 2rem;
   font-size: 1.5rem;
   font-weight: 400;
@@ -87,6 +90,7 @@ h3 {
 
 input#playername {
   color:black;
+  background-color: rgba(0, 15, 230, 0.493);
   height: 3.5rem;
   border-radius: 5px;
   font-size: 3.5rem;
@@ -95,19 +99,19 @@ input#playername {
 
 /*Madia queries*/
 
-@media(max-width: 500px)
+@media(max-width: 320px)
 {
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
-  #main-container {
-    padding-top: 20%;
-  }
+ 
   #home {
-  margin: 20px;
+  padding: 5%;  
+  margin-top:  5px;
+  box-sizing: border-box;
   }
 }
