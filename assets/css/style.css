@@ -17,16 +17,97 @@ body {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-top: 1.5rem;
 }
 
 #main-container {
-  width: 100vh;
-  height: 100vh;
+  /*width: 100vh;
+  height: 100vh;*/
+  background-color: blue;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  /*max-width: 80rem;*/
+}
+
+#home {
+  border: 2px solid #fff;
+  padding: 20px 40px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*max-width: 80rem;*/
-  margin: 0 auto;
 }
 
+.items-aligned {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#submit-button {
+  margin-top: 30px;
+  background-color: rgb(132, 211, 211);
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  border: 2px solid rgb(32, 22, 22);
+}
+
+#enter-playername {
+  font-size: 4rem;
+}
+
+input#playername {
+  color:black;
+  height: 3.5rem;
+  border-radius: 5px;
+  font-size: 3.5rem;
+  box-sizing: border-box;
+}
+
+/*Madia queries*/
+
+@media(max-width: 500px)
+{
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  #main-container {
+    padding-top: 20%;
+  }
+  #home {
+  margin: 20px;
+  }
+}

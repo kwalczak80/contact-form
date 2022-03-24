@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Electronic Quizz</title>
+    <title>Arduino knowlegde check</title>
 </head>
+
 <body>
-<div id="main-container">
-    <div id="home" class="flex-center flex-column">
-        <h1>Electronic Quizz</h1>
+    <div id="main-container">
+        <div id="home" class="flex-center flex-column">
+            <h1>Welcome to Ardunino knowlegde check</h1>
+            <h3>Before we start please enter your user name below </h3>
+            <div id="user">
+                <form id="player-form" method="post" action="javascript: void(0);">
+                    <label for="playername" id="enter-playername"></label>
+                    <input type="text" id="playername" name="playername" pattern="[a-zA-Z0-9]+" required>
+                </form>
+            </div>
+            <div>
+                <button type="submit" id="submit-button">Submit</button>
+            </div>
+        </div>
     </div>
-</div>
-<!-- Link to javascript file -->    
-<script src="assets/js/game.js"></script>
+    <!-- Link to javascript file -->
+    <script src="assets/js/game.js"></script>
 </body>
+
 </html>
