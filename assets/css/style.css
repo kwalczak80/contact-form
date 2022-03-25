@@ -99,6 +99,10 @@ input#playername {
   /*box-sizing: border-box;*/
 }
 
+.hide {
+  display: none;
+}
+
 /*Madia queries*/
 
 @media(max-width: 640px)
