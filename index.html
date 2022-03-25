@@ -15,18 +15,23 @@
             <h1>Welcome to Arduino knowledge check quiz</h1>
             <h3>Before we start please enter your name below </h3>
             <div id="user">
-                <form id="player-form" method="post" action="javascript: void(0);">
+                <form id="player-form" class="flex-center flex-column" method="post" action="javascript: void(0);">
                     <label for="playername" id="enter-playername"></label>
                     <input type="text" id="playername" name="playername" pattern="[a-zA-Z0-9]+" required>
+                    <input type="submit" id="submit-button" value="Submit">
                 </form>
             </div>
-            <div>
-                <input type="submit" id="submit-button">Submit</button>
-            </div>
         </div>
+
+
+        <section id="welcome" class="hide">
+            <div class="welcome-area" class="hide">
+                <h2>Hello and Welcome...</h2>
+            </div>
+        </section>
     </div>
     <!-- Link to javascript file -->
-    <script src="assets/js/game.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

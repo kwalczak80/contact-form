@@ -18,13 +18,13 @@ body {
 
 h1 {
   font-size: 5rem;
-  color: #e11b1b;
+  color: #d2d7e2;
 }
 
 h3 {
   font-size: 3rem;
   margin-top: 1.5rem;
-  color: #e11b1b;
+  color: #ccd0e9;
 }
 
 #main-container {
@@ -74,7 +74,7 @@ h3 {
 
 #submit-button {
   margin-top: 30px;
-  background-color: #e11b1b;
+  background-color: #98c9c6;
   padding: 1rem 2rem;
   font-size: 1.5rem;
   font-weight: 400;
@@ -82,6 +82,7 @@ h3 {
   border-radius: 15px;
   text-transform: uppercase;
   border: 2px solid rgb(32, 22, 22);
+  /*width: 30%;*/
 }
 
 #enter-playername {
@@ -90,16 +91,17 @@ h3 {
 
 input#playername {
   color:black;
-  background-color: rgba(0, 15, 230, 0.493);
+  background-color: rgba(169, 172, 212, 0.493);
   height: 3.5rem;
   border-radius: 5px;
-  font-size: 3.5rem;
-  box-sizing: border-box;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  /*box-sizing: border-box;*/
 }
 
 /*Madia queries*/
 
-@media(max-width: 320px)
+@media(max-width: 640px)
 {
   h1 {
     font-size: 2rem;

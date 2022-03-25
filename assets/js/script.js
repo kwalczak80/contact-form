@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
 });
 
-let = user = getElemenyById('playername');
+let user = document.getElementById('playername');
+let home = document.getElementById('home');
 let form = document.getElementById('player-form');
 form.addEventListener('submit', function(event){
-    this.style.display = 'none';
-    clonsole.log('Username', user.value);
-    event(pervent.Default);
-})
+    home.style.display = 'none';
+    console.log('Username', user.value);
+    event.preventDefault();
+});
