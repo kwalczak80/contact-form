@@ -99,8 +99,13 @@ input#playername {
   /*box-sizing: border-box;*/
 }
 
-.hide {
+.hide-content {
   display: none;
+}
+
+.welcome-area {
+  color: azure;
+  font-size: 120%;
 }
 
 /*Madia queries*/

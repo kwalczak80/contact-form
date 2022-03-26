@@ -11,22 +11,24 @@
 
 <body>
     <div id="main-container">
-        <div id="home" class="flex-center flex-column">
-            <h1>Welcome to Arduino knowledge check quiz</h1>
-            <h3>Before we start please enter your name below </h3>
-            <div id="user">
-                <form id="player-form" class="flex-center flex-column" method="post" action="javascript: void(0);">
-                    <label for="playername" id="enter-playername"></label>
-                    <input type="text" id="playername" name="playername" pattern="[a-zA-Z0-9]+" required>
-                    <input type="submit" id="submit-button" value="Submit">
-                </form>
+        <section id="home">
+            <div class="flex-center flex-column">
+                <h1>Welcome to Arduino knowledge check quiz</h1>
+                <h3>Before we start please enter your name below </h3>
+                <div id="user">
+                    <form id="player-form" class="flex-center flex-column" method="post" action="javascript: void(0);">
+                        <label for="playername" id="enter-playername"></label>
+                        <input type="text" id="playername" name="playername" pattern="[a-zA-Z0-9]+" required>
+                        <input type="submit" id="submit-button" value="Submit">
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
 
-
-        <section id="welcome" class="hide">
-            <div class="welcome-area" class="hide">
-                <h2>Hello and Welcome...</h2>
+        <section id="quiz-rules" class="hide-content">
+            <div class="welcome-area">
+                <h1>Hello and Welcome...</h1>
+                <p id="quiz-information">jkshdjksahdjkashdkjashdkjhas</p>
             </div>
         </section>
     </div>
