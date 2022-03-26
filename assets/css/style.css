@@ -21,10 +21,23 @@ h1 {
   color: #d2d7e2;
 }
 
+h2 {
+  margin: 20px 0;
+}
+
 h3 {
   font-size: 3rem;
   margin-top: 1.5rem;
   color: #ccd0e9;
+}
+
+p {
+  font-size: 3rem;
+  text-align: center;
+}
+
+li {
+  font-size: 2rem;
 }
 
 #main-container {
@@ -85,6 +98,11 @@ h3 {
   /*width: 30%;*/
 }
 
+#submit-button:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(52, 203, 230, 0.6);
+  transition: transform 160ms;
+  transform: scale(1.03);
+}
 #enter-playername {
   font-size: 4rem;
 }
@@ -106,6 +124,26 @@ input#playername {
 .welcome-area {
   color: azure;
   font-size: 120%;
+}
+
+button {
+  color: #fff;
+  background-color: #40b9bd;
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 12px;
+}
+
+#quiz-rules {
+  border: 2px solid rgba(6, 213, 255, 1);
+  padding: 20px 40px;
+  background-color: rgba(21, 21, 138, 0.2);
+  border-radius: 10px;
 }
 
 /*Madia queries*/
