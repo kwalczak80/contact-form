@@ -1,54 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Arduino knowlegde check</title>
-</head>
+      body {     
+        font-family: 'Raleway', sans-serif;   
+        background-color: #344a72;
+        line-height: 1.8em;
+      }
 
-<body>
-    <div id="main-container">
-        <section id="home">
-            <div class="flex-center flex-column">
-                <h1>Welcome to Arduino knowledge check quiz</h1>
-                <h3>Before we start please enter your name below </h3>
-                <div id="user">
-                    <form id="player-form" class="flex-center flex-column" method="post" action="javascript: void(0);">
-                        <label for="playername" id="enter-playername"></label>
-                        <input type="text" id="playername" name="playername" pattern="[a-zA-Z0-9]+" required>
-                        <input type="submit" id="submit-button" value="Submit">
-                    </form>
-                </div>
-            </div>
-        </section>
+      a {
+        text-decoration: none;
+      }
 
-        <section id="quiz-rules" class="hide-content">
-            <div class="welcome-area flex-column items-aligned">
-                <h1 id="welcome-player"></h1>
-                <p id="quiz-information"></p>
-                <h2>Rules are very simple</h2>
-                <ul>
-                    <li>A question will be displayed on the screen with 2,3 or 4 possible answers.</li>
-                    <li>Select the answer you think is the correct answer.</li>
-                    <li>For a good answer you will get a score of 1 point as correct, for an incorrect answer, you will get 1 point as incorrect .</li>
-                    <li>A new question will be loaded once you hit <strong>Submit answer</strong> button</li>
-                    <li>Remember - time to answer each question is limited !!</li>
-                </ul>
-                <div>
-                    <button type="button" aria-label="Quiz start button" id="quiz-start">OK, I understand</button>
-                </div>
-            </div>
-        </section>
+      #container {
+        margin: 20px auto;
+        max-width: 450px;
+        padding: 10px;
+      }
 
-        <section id="quiz" class="hide-content">
-            Test
-        </section>
+      .form-wrap {
+        background-color: #fafafa;
+        padding: 20px 10px;
+        color: #333;
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+      }
+
+      .form-wrap .form-group {
+        margin-top: 15px;
+      }
+
+      .form-wrap .form-group label {
+        display: block;
+      }
+
+      .form-wrap .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: #ddd solid 1px;
+        border-radius: 5px;
+      }
+
+      .form-wrap button {
+        width: 100%;
+        display: block;
+        background-color: #49c1a2;
+        padding: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        color: #fff;
+        border: none;
+      }
+
+      .form-wrap button:hover {
+        background-color: #37a08e;
+        padding: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      .form-wrap .bottom-text {
+        font-size: 13px;
+        margin-top: 20px;
+      }
+
+      footer {
+        
+        text-align: center;
+        margin-top: 10px;
+        color: #fff;
+      }
+
+      footer a {
+        color: #49c1a2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Sign Up</h1>
+        <p>It's free and only takes a minute</p>
+        <form>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="firstName" id="first-name" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="lastName" id="last-name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm Password</label>
+            <input type="password" name="pasword2" id="password2" />
+          </div>
+          <button type="submit" class="btn">Sign Up</button>
+          <p class="bottom-text">
+            By clicking the Sign Up button, you agree to our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+      <footer>
+        <p>Already have an account? <a href="#">Login Here</a></p>
+      </footer>
     </div>
-    <!-- Link to javascript file -->
-    <script src="assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>
